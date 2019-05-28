@@ -1,0 +1,471 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,'Segoe UI','Roboto', 'Droid Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+small {
+  color: #888;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.header-section {
+  background-image: url("images/demo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.header-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-section .logo,
+.header-section .menu-link {
+  padding: 1em;
+}
+
+.header-section .logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.header-section .menu-sub {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+  align-items: center;
+}
+
+.jumbo-container {
+  padding: 10em 0;
+}
+
+.jumbo {
+  color: white;
+  text-align: center;
+}
+
+.jumbo>h1,
+.jumbo>h2,
+.jumbo>div {
+  padding: 0.2em;
+  margin: auto;
+}
+
+.jumbo .main {
+  font-size: 60px;
+}
+
+.jumbo .sub  {
+  font-weight: lighter;
+}
+
+.search-container,
+.subscribe-container {
+  display: inline-block;
+  width: 75%;
+  margin: auto;
+}
+
+.search-box,
+.subscribe-box {
+  display: flex;
+  padding: 1em;
+}
+
+.search-input,
+.search-button,
+.subscribe-input,
+.subscribe-button {
+  height: 48px;
+  border: none;
+  padding: 0;
+}
+
+.search-input,
+.subscribe-input {
+  width: calc(100% - 120px);
+  padding-left: 16px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #333;
+}
+
+.search-button,
+.subscribe-button {
+  width: 120px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  vertical-align: center;
+  text-align: center;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1.2em;
+}
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-5 {
+  width: 1000px;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.sec-1 {
+  display: flex;
+  background-color: white;
+}
+
+.sec-1>.group {
+  flex-grow: 1;
+  padding: 1.4em 1em;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sec-1>.group>img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  padding: 0.5em;
+}
+
+.sec-1>.group>h2 {
+  font-weight: 500;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0.5em 0 0;
+}
+
+.sec-2,
+.sec-3,
+.sec-6,
+.sec-7 {
+  text-align: center;
+}
+
+.sec-2>h2,
+.sec-3>h2,
+.sec-6>h2,
+.sec-7>h2 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.sec-2 .cards,
+.sec-3 .cards,
+.sec-5 .cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 0;
+  justify-content: space-around;
+}
+
+.sec-2 .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  margin: 0.5px;
+  color: white;
+  width: 230px;
+  height: 220px;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.explore-all {
+  display: flex;
+  margin: auto;
+  border: 1px solid #ff5722;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 40px;
+}
+
+.explore-all:hover {
+  background-color: #ff5722;
+}
+
+.explore-all a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff5722;
+}
+
+.explore-all:hover a {
+  color: white;
+}
+
+.explore-all a:hover,
+.explore-all a:active {
+  text-decoration: none;
+}
+
+.sec-3 {
+  margin-top: 4em;
+}
+
+.sec-3 .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  color: white;
+  background-color: white;
+  width: 300px;
+  height: 352px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease-in-out;
+}
+
+.sec-3 .card.main {
+  width: 630px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-3 .card.main h1 {
+  font-size: 32px;
+  margin-bottom: 0.4em;
+}
+
+.sec-3 .card.main p {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+.sec-3 .card.main .explore-more {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-3 .card.main .explore-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.sec-3 .card.main a:hover,
+.sec-3 .card.main a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.sec-3 .card .header {
+  height: 215px;
+  padding: 1em;
+  border-radius: 2px 2px 0 0;
+  text-align: left;
+}
+
+.sec-3 .card h3,
+.sec-3 .card .desc,
+.sec-3 .card .price {
+  color: black;
+  text-align: left;
+}
+
+.sec-3 .card h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0.2em 1em;
+}
+
+.sec-3 .card .desc {
+  color: gold;
+  font-size: 14px;
+  margin: 0.2em 1em;
+}
+
+.sec-3 .others {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2em 1em;
+}
+
+.sec-3 .status {
+  color: green;
+}
+
+.sec-5 .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 320px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em;
+  color: white;
+}
+.menu-sub2 {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.menu-link2 {
+  padding: 1em;
+}
+
+.sec-8,
+.sec-9 {
+  display: flex;
+  background-color: #333;
+  padding: 2em;
+  justify-content: space-around;
+}
+
+.sec-8 .group-1,
+.sec-8 .group-2,
+.sec-8 .group-3 {
+  display: flex;
+  background-color: #333;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sec-8 .group-1 {
+  width: 20%;
+}
+
+.sec-8 .group-2 {
+  width: 40%;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.sec-8 .group-3 {
+  width: 40%;
+}
+
+.sec-8 .group-1 a {
+  font-size: 1.4em;
+}
+
+.sec-8 .group-1 a,
+.sec-8 .group-1 a:hover,
+.sec-8 .group-1 a:active {
+  text-decoration: none;
+  color: #888;
+}
+
+.sec-8 .group-2 h5 {
+  color: white;
+  margin-bottom: 0.2em;
+}
+
+.sec-9 {
+  border-top:  1px solid #444;
+}
+
+.sec-9 .group-1,
+.sec-9 .group-2,
+.sec-9 .group-3,
+.sec-9 .group-4,
+.sec-9 .group-5 {
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/5);
+  margin: 0.5em;
+}
+
+.sec-9 .group-1 {
+  font-size: 12px;
+  color: #888;
+  font-weight: lighter;
+}
+
+.sec-9 .group-1 div {
+  padding: 0.4em 0;
+}
+
+.sec-9 h5 {
+  color: white;
+  margin-bottom: 0.8em;
+}
+
+.sec-9 a,
+.sec-9 a:hover,
+.sec-9 a:active {
+  text-decoration: none;
+}
+
+.sec-9 a small {
+  margin-bottom: 0.4em;
+}
+
+.sec-9 .ask {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #888;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-9 .ask a {
+  text-decoration: none;
+  color: #888;
+}
+
+.sec-9 .ask:hover {
+  border: 1px solid white;
+}
+
+.sec-9 .ask:hover a {
+  color: white;
+}
+
+.sec-9 a:hover,
+.sec-9 a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.sec-9 .group-5 h5 {
+  color: #888;
+  margin: 1em 0;
+  font-weight: 500;
+}
+
+.sec-9 .group-5 .types img {
+  margin-right: 13px;
+  margin-bottom: 18px;
+  width: 40px;
+  height: 15px;
+}
